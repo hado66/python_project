@@ -72,9 +72,15 @@ class SingeLinkList(object):  # 链表类   作用把节点串联起来
         # remove(item) 删除节点
         pass
 
-    def search(self, item):
+    def search(self,item):
         # 查找节点是否存在
-        pass
+        cur=self.__head
+        while cur!=None:
+            if cur.elem==item:
+                return True
+            else:
+                cur=cur.next
+        return False
 
 
 if __name__=="__main__":
@@ -93,4 +99,5 @@ if __name__=="__main__":
 
     print(ll.is_empty())
 
+    print(ll.search("charu"))
     ll.travel()
