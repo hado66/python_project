@@ -1,0 +1,18 @@
+
+
+关系型数据库：
+
+orangcle
+Mysql  #最常用
+sqlserver
+db2
+postgresql
+sqlite
+access
+
+create table student(    #创建表
+    stu_id int auto_increment,
+    name char(32) not null,
+    age int not null,
+    register_date date not null,
+    primary key (stu_)id));

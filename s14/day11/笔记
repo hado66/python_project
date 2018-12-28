@@ -1,0 +1,15 @@
+RabbitMQ 消息队列
+
+    py
+        threading queue  线程queue
+        进程  queue    父进程与子进程进行交互，或者同属于同一父进程下的多个子进程进行交互
+
+     不同语言或不同机器间用 rabbitMQ
+
+    erlang开发
+
+Redis
+单线程的，通过异步的方式做的高并发，用的是epoll的方式
+
+
+Mysql

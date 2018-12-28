@@ -1,0 +1,34 @@
+.pg-header{
+    height:38px;
+    background-color: rgba(77, 47, 255, 0.03);
+    line-height:38px ;
+}
+.div2{
+    height: 80px;
+    background-color: inherit;
+}
+.div3{
+    height: 50px;
+    background-color: #ff2322;
+    line-height: 50px;
+}
+.div3-1{color: rgba(255,255,255,1);font-size:20px;display: inline;margin-left: 2%
+
+}
+.div4{
+    height: 1012px;
+    border: 1px solid red;
+}
+
+
+
+.pg-top{
+    width:76%;
+    /*height: 300px;*/
+    border: 2px solid #184bff;
+    float: right;
+}
+.pg-kuang{
+    width: 24%;height: 300px;border: 1px solid rgba(30, 255, 16, 0.67);
+    float: left;
+}

@@ -1,0 +1,40 @@
+
+
+线程：操作系统的最小调度单位（每个人是个线程  ）
+
+进程：资源的集合（一个屋子）
+
+线程同时修改一份数据是必须加锁，metex互斥锁
+递归锁
+
+
+join --- 等待一个线程介绍
+def run(n):
+    print("hjhjh")
+
+t_res=[]
+for i in range(50):
+    t=threading.Thread(target=run,args=(n,))
+    t.setDaemon(True) -----它是一个守护线程
+    t.start()
+    t.join()  ----串行
+    t_res.append(t)
+for r in t_res:   --等待所有线程执行结果
+    r.join()
+
+守护线程 ，服务于非守护线程（master）  ---“主人宕掉，仆人也宕掉了”
+
+queue
+   解耦，是程序直接实现送耦合
+   提高处理效率
+
+   FIFO = first in first out
+   LIFO = last in first out
+
+io 操作不占用cpu
+计算占用cpu，1+1
+
+python 多线程 不适合cpu密集型操作的任务，适合io操作密集型的任务
+
+Medol      View      Controller
+数据库    模板文件    业务处理

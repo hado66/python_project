@@ -1,0 +1,36 @@
+django-admin startproject mysite  【mysize工程名称】
+
+mysite
+    -mysite    #对整个程序进行配置
+        -init
+        -settings   #配置文件
+        -url      # URL 对应关系
+        -wsgi     # 遵循wsgi规范，uwsgi+nginx
+    -manage.py    #管理Django程序：
+                        - python manage.py
+                        - python manage.py startapp xx
+                        - python manage.py makemigrations
+                        - python manage.py migrate
+
+    python manage.py runserver 127.0.0.1:8001
+
+
+
+【】【】
+wsgi
+    是一套接口，一套规则
+
+
+
+    chouti
+         -使用一个数据库，一个配置
+        -主站  app
+        -后台管理 app
+        -
+#创建app
+python manage.py startapp cmdb
+python manage.py startapp openstack
+
+
+
+

@@ -1,0 +1,74 @@
+静态方法：
+    与类无关，不能访问类里的任何属性和方法
+类方法
+    只能访问类变量
+
+属性@property
+    把一个方法变成一个静态属性，
+    flight.status
+    @status.setter
+    flight.status=3
+    @status.delter
+反射
+    getattr(obj,str)
+    setattr(obj,str,val)  val可以是变量，可以是静态属性
+    hasattr(obj,str)
+    delattr(obj,str)
+
+class Foo(object):
+    def __call__()
+    print("call")
+Foo()() #执行call方法
+
+__metaclass__ 用来定义这个类以怎样的形式被创建
+
+try
+    ...
+except (ValueError,KeyError) as e:
+else: #没发生异常，就执行
+finally  无论如何都执行
+
+定义自己的异常
+except Exception as e :放在异常处理的最后面
+
+断言 assert
+
+socket
+    所有的网络协议都是对数据的收发
+    tcp/ip        send/receive
+    udp    封装
+
+    服务端：c
+    server=socket.socket(AF.INET,sock.SOCK_STREAM)
+   server.bind((localhost,9999))
+   server.listen()
+   while True:
+       conn,addr=server.accept()
+
+       while True:
+            print("new conn",addr)
+            data=conn.recv(1024) 最大是10M，官方建议不超过8192k
+            if not data:
+                break    #客户端一断开，conn.recv收到的都是空数据
+            print(data)
+            conn.send(data.upper())
+   server.close()
+
+    客户端：
+    client
+        client=socket.socket()
+        client.connect((serverip,9999))
+        client.send(data)
+        client.recv(data)
+
+
+
+    family address
+        AF.INET
+        AF.INET6
+        AF.UNIX.local
+
+    socket protocol type
+    sock.SOCK_STREAM tcp/ip
+    socket.SOCK_SOCK_DGRAM 数据报式 socket ，for UDP
+

@@ -1,0 +1,13 @@
+构造函数
+类变量的用途？ --存储共同点
+实例变量用途?  --存储大家不同的属性
+class Person:
+    cn="中国"
+    def __init__(self,name,age,addr)
+        self.name=name
+
+p1=Person("name","age","addr")
+
+析构函数：在实例释放或销毁的时候自动执行的，通常用于做一些收尾工作，如关闭一些数据库连接打开的临时文件
+
+
