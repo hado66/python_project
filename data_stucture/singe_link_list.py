@@ -21,7 +21,6 @@ class SingeLinkList(object):  # 链表类   作用把节点串联起来
             count+=1
             cur=cur.next
         return count
-
     # 遍历整个链表
     def travel(self):
         cur= self.__head
@@ -70,7 +69,19 @@ class SingeLinkList(object):  # 链表类   作用把节点串联起来
 
     def remove(self, item):
         # remove(item) 删除节点
-        pass
+        cur=self.__head
+        pre=None
+        print('ceshi',cur.elem)
+        while cur!=None:
+            if cur.elem==item:
+                if cur==self.__head: #重点当
+                    self.__head=cur.next
+                else:
+                    pre.next=cur.next
+                break
+            else:
+                pre=cur
+                cur=cur.next
 
     def search(self,item):
         # 查找节点是否存在
@@ -95,9 +106,7 @@ if __name__=="__main__":
     ll.travel()
     print(ll.length())
     ll.insert(5,"charu")
-
-
     print(ll.is_empty())
-
     print(ll.search("charu"))
+    ll.remove("charu")
     ll.travel()
