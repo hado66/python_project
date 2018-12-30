@@ -28,11 +28,6 @@ class SingeLinkList(object):  # 链表类   作用把节点串联起来
             print(cur.elem,end=' ')
             cur=cur.next
         print("")
-
-
-
-
-
     def add(self,item):
         # 链表头部添加元素
         node=Node(item)
