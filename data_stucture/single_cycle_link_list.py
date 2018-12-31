@@ -129,7 +129,6 @@ class Single_Cycle_list(object):
                     self.__head=cur.next
                     rear.next=self.__head
                     return
-
                 else:
                     #中间节点
                     pre.next=cur.next
@@ -139,8 +138,7 @@ class Single_Cycle_list(object):
                 cur=cur.next
         #退出循环，代表的是cur指向尾节点
         if cur.elem==item and cur.next==self.__head:
-            # print("cur.elem",cur.elem)
-            # cur=self.__head
+            #只有一个节点
             if self.length()==1:
                 #链表中只有一个节点
                 self.__head=None
