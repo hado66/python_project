@@ -34,7 +34,7 @@ class Single_Cycle_list(object):
             return None
         cur = self.__head
         while cur.next != self.__head:
-            print(cur.elem,end=' ')
+            print(cur.elem)
             cur = cur.next
         print(cur.elem)
 
