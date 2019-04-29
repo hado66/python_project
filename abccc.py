@@ -1,9 +1,6 @@
-from sklearn.tree import export_graphviz
-    export_graphviz(
-            tree_clf,
-            out_file=image_path("iris_tree.dot"),
-            feature_names=iris.feature_names[2:],
-            class_names=iris.target_names,
-            rounded=True,
-            filled=True
-        )
+import requests
+import jsonpath
+
+url='https://pg.qq.com/zlkdatasys/data_zlk_zlzx.json'
+reponse=requests.get(url).json()
+print(url)

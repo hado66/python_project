@@ -1,0 +1,43 @@
+html
+一大堆标签：块级、行内
+
+css：
+    position
+    background
+    text——align
+    margin
+    padding
+    font-size
+    z-index
+    over-flow
+    :hover
+    opacity
+    float(clear:both)
+    line-height
+    border
+    color
+    display
+
+    补充：页面布局
+
+        主站布局
+        <div class='pg-header'>
+            <div style='width:980px;margin:0,auto;>
+            内容自动居中
+            </div>
+        </div>
+        <div class='pg-content'> </div>
+        <div class='pg-footer'></div>
+
+        后台管理布局：
+        position
+        fixed --永远固定在某个位置
+        relative --单独无意义
+        absolute --第一次定位，可以在指定位置，滚轮滚动时，不在了
+
+
+
+
+
+
+

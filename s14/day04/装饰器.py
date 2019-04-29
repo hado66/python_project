@@ -16,26 +16,38 @@
 
 #decorator
 import time
-# def timer(func1):
-#     def warpper(*args,**kwargs):
-#         start_time=time.time()
-#         func1()
-#         stop_time=time.time()
-#         print("the func run time is %s" %(stop_time-start_time))
-#     return warpper()
-#
-# @timer
-# def test1():
-#     time.sleep(1)
-#     print("in the test1")
-# timer(test1)
+
+def timer(func1):
+    def warpper(*args,**kwargs):
+        start_time=time.time()
+        func1()
+        stop_time=time.time()
+        print("the func run time is %s" %(stop_time-start_time))
+    return warpper
+
+
+
+@timer
+def test1():
+    time.sleep(1)
+    print("in the test1")
+
+
 def bar():
     time.sleep(3)
     print('in the bar')
-def test2(func):
-    print(func)
-    return func
-t=test2(bar)
-print(t)
-print(t())
+
+
+if __name__ == '__main__':
+    pass
+
+
+
+
+# def test2(func):
+#     print(func)
+#     return func
+# t=test2(bar)
+# print(t)
+# print(t())
 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>gggggggggggggggg</div>
+<!--<h1>{{ff('付志远')|safe}}</h1>-->
+<h1>{{ff('付志远ssss')}}</h1>
+{%macro xx(name,type='text,value='')%}
+<input type="{{type}}" name="{{name}}" value="{{value}}">
+<input type="{{type}}" name="{{name}}" value="{{value}}">
+<input type="{{type}}" name="{{name}}" value="{{value}}">
+<input type="{{type}}" name="{{name}}" value="{{value}}">
+{%endmacro%}
+
+
+{{xx('n')}}
+
+
+
+</body>
+</html>
